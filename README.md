@@ -117,6 +117,7 @@ ok
 
 $ _rel/hello_erlang_release/bin/hello_erlang_release ping
 Node 'hello_erlang@127.0.0.1' not responding to pings.
+```
 
 ---------------------------------------------------------------
 
@@ -126,5 +127,7 @@ Create self-container `.tar.gz` released:
 $ ./relx release tar
 ```
 
+No you can untar this on the machine with similar OS and it should work out of the box.
 
+---------------------------------------------------------------
 
