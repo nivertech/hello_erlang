@@ -96,9 +96,35 @@ $ ./relx
 ===> release successfully created!
 ```
 
+running release script:
+
+``` bash
+$ _rel/hello_erlang_release/bin/hello_erlang_release
+Usage: hello_erlang_release {start|start_boot <file>|foreground|stop|restart|reboot|pid|ping|console|console_clean|console_boot <file>|attach|remote_console|upgrade|escript|rpc|rpcterms}
+
+$ _rel/hello_erlang_release/bin/hello_erlang_release start
+$ _rel/hello_erlang_release/bin/hello_erlang_release ping
+pong
+
+$ curl http://localhost:8080
+Hello, Erlang
+
+$ _rel/hello_erlang_release/bin/hello_erlang_release ping
+pong
+
+$ _rel/hello_erlang_release/bin/hello_erlang_release stop
+ok
+
+$ _rel/hello_erlang_release/bin/hello_erlang_release ping
+Node 'hello_erlang@127.0.0.1' not responding to pings.
+
+---------------------------------------------------------------
+
 Create self-container `.tar.gz` released:
 
 ``` bash
 $ ./relx release tar
 ```
+
+
 
